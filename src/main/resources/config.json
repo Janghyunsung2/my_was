@@ -1,0 +1,34 @@
+{
+  "port": 8000,
+  "errors": {
+    "403": "403.html",
+    "404": "404.html",
+    "500": "500.html"
+  },
+  "hosts": {
+    "a.com": {
+      "http_root": "/var/www/a_com",
+      "errors": {
+        "403": "403.html",
+        "404": "404.html",
+        "500": "500.html"
+      }
+    },
+    "b.com": {
+      "http_root": "/var/www/b_com",
+      "errors": {
+        "403": "403.html",
+        "404": "404.html",
+        "500": "500.html"
+      }
+    },
+    "*": {
+      "http_root": "/var/www",
+      "errors": {
+        "403": "403.html",
+        "404": "404.html",
+        "500": "500.html"
+      }
+    }
+  }
+}

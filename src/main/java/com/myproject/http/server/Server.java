@@ -1,11 +1,11 @@
-package com.myproject.httpserver;
+package com.myproject.http.server;
 
-import com.sun.net.httpserver.HttpHandler;
+import java.io.IOException;
+import java.net.Socket;
 
 public interface Server {
 
-    void start();
+    void start() throws IOException;
     void stop();
-    void addRoute(String path, HttpHandler handler);
-
+    boolean isRunning();
 }

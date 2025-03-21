@@ -1,4 +1,10 @@
 package com.myproject.http.request;
 
-public class HttpRequest {
+public interface HttpRequest {
+
+    String getMethod();
+    String getPath();
+    String getHeader(String name);
+    String getBody();
+    String getParameter(String name);
 }

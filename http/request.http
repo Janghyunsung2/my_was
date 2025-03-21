@@ -1,5 +1,36 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+
+### 1. a.com
+GET http://localhost:8000/
+Content-Type: text/html; charset=UTF-8
+Host: a.com
+
+
+### 1. b.com
+GET http://localhost:8000
+Host: a.com
+
+### 4-1 HTTP_ROOT 디렉터리의 상위 디렉터리에 접근할 때
+GET http://localhost:8000/../index.html
+
+
+### 4-2 .exe 파일 요청 받았을 때
+GET http://localhost:8000/index.exe
+
+
 
 ###
+GET http://localhost:8000/Hello?name=hyunsungJang
+Content-Type: text/html; charset=UTF-8
+Host: a.com
+
+###
+GET http://localhost:8000
+Content-Type: text/html; charset=UTF-8
+Host: a.com
+
+###
+GET http://localhost:8000/TimeServlet
+
+
+
+
